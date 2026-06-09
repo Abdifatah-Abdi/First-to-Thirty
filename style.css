@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	padding: 3em;
+}
+
+h2 {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.Options {
+	margin-top: 1em;
+}
+
+.Options div {
+	margin-top: 0.5em;
+}
+
+.Options button {
+	padding: 0.5em;
+}
+
+.Rounds {
+	margin-top: 1em;
+}
+
+.Round {
+	margin-bottom: 4em;
+}
+
+.Round .Components {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+
+	gap: 1em;
+}
+
+.Round p {
+	font-weight: bold;
+	display: block;
+}
+
+.Spinner {
+	display: flex;
+	width: 80%;
+	height: 5em;
+}
+
+.SpinArea {
+	display: inline-flex;
+	height: 100%;
+	flex-basis: 0;
+	flex-grow: 1;
+
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+}
+
+.Components button {
+	width: 20%;
+}
+
+.Result {
+	margin-top: 0.5em;
+}
+
+#Red {
+	background-color: red;
+}
+
+#Green {
+	background-color: green;
+}
+
+#Blue {
+	background-color: blue;
+}
+
+.Selected {
+	border: 5px solid rgb(182, 182, 182);
+}

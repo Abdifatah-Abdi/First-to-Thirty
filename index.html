@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First to Thirty</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<main>
+		<template id="round-template">
+			<div class="Round">
+				<p>Round 1</p>
+
+				<div class="Components">
+					<div class="Spinner">
+						<div class="SpinArea" id="Red">Red</div>
+						<div class="SpinArea" id="Green">Green</div>
+						<div class="SpinArea" id="Blue">Blue</div>
+					</div>
+
+					<div class="Dice">
+						<div class="Die" id="Dice1">Dice 1: N/A</div>
+						<div class="Die" id="Dice2">Dice 2: N/A</div>
+					</div>
+
+					<button class="go">Go</button>
+				</div>
+
+				<div class="Result">
+					<p class="pSpinColour">Spinner Colour | <span class="SpinColour">N/A</span> | <span
+							class="SpinPoints">N/A</span></p>
+					<p class="pDiceSum">Dice Sum | <span class="DiceSum">N/A</span></p>
+					<p class="pTotal">Total | <span class="Total">N/A</span></p>
+				</div>
+			</div>
+		</template>
+
+		<h1>First to Thirty</h1>
+		<h2>Browser version of First to Thirty</h2>
+
+		<div class="Options">
+			<h3>Options</h3>
+
+			<div>
+				<label for="simulation-count">Number of Games</label>
+				<input type="range" name="simulation-count" id="simulation-count" value="1" step="1" min="1" max="100">
+				<span id="simulation-text">1</span>
+			</div>
+
+			<div>
+				<label for="speed">Speed</label>
+				<input type="range" name="speed" id="speed" value="1" step="0.1" max="5">
+				<span id="speed-text">1</span>
+			</div>
+
+			<div>
+				<button id="run">Run All</button>
+				<button id="reset">Reset</button>
+			</div>
+		</div>
+
+		<div class="Rounds"></div>
+	</main>
+	<script src="./script.js"></script>
+</body>
+
+</html>
