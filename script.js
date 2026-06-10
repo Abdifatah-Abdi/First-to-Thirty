@@ -154,8 +154,7 @@ reset.addEventListener("click", () => {
 exportData.addEventListener("click", () => {
     let csv = "Trial,Spinner,Dice Sum,X\n";
 
-    const count = (simulationCount.value || simulationCount.placeholder) || 1;
-
+    const count = (simulationText.value || simulationCount.placeholder) || 1;
     const keys = Object.keys(ColourPointsMap);
     console.log(keys);
     
@@ -176,7 +175,7 @@ exportData.addEventListener("click", () => {
         type: "text/csv;charset=utf-8;"
     });
 
-        const url = URL.createObjectURL(blob);
+    const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
